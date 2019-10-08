@@ -48,11 +48,15 @@ namespace SegundaEntrega
 
         public float incentiveValue
         {
-            get { return incentive_value; }
+            get
+            {
+                calculateBill();
+                return incentive_value;
+            }
             set { incentive_value = value; }
         }
 
-        public float calculateBill(float save_goal, float actual_consume)
+        public float calculateBill()
         {
             float partial_value = actual_consume * 500;
             incentive_value = (save_goal - actual_consume) * 500;
@@ -114,18 +118,21 @@ namespace SegundaEntrega
         public float savePercentagePerStratum(string stratum)
         {
             float save_percentage;
-            float consumes_accumulator = 0;
+            float incentives_accumulator = 0;
             float save_goals_accumulator = 0;
             foreach (User user in registered_users)
             {
-                if (!user.consumeBiggerThanGoal())
+                if (user.Stratum == stratum)
                 {
-                    consumes_accumulator += user.actualConsume;
+                    if (user.incentiveValue > 0)
+                    {
+                        incentives_accumulator += user.incentiveValue;
+                    }
                     save_goals_accumulator += user.saveGoal;
                 }
             }
-            save_percentage = (consumes_accumulator / save_goals_accumulator);
-            save_percentage *= 100;
+            save_goals_accumulator *= 500;
+            save_percentage = (incentives_accumulator / save_goals_accumulator) * 100;
             return save_percentage;
         }
 
