@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsumeAverage));
             this.label1 = new System.Windows.Forms.Label();
             this.lblAverage = new System.Windows.Forms.Label();
+            this.gpBox = new System.Windows.Forms.GroupBox();
+            this.gpBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 18);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(427, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "El promedio de consumo actual es";
             // 
             // lblAverage
             // 
-            this.lblAverage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblAverage.AutoSize = true;
-            this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(12, 63);
+            resources.ApplyResources(this.lblAverage, "lblAverage");
             this.lblAverage.Name = "lblAverage";
-            this.lblAverage.Size = new System.Drawing.Size(0, 31);
-            this.lblAverage.TabIndex = 1;
+            // 
+            // gpBox
+            // 
+            resources.ApplyResources(this.gpBox, "gpBox");
+            this.gpBox.Controls.Add(this.label1);
+            this.gpBox.Controls.Add(this.lblAverage);
+            this.gpBox.Name = "gpBox";
+            this.gpBox.TabStop = false;
             // 
             // ConsumeAverage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 131);
-            this.Controls.Add(this.lblAverage);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.Controls.Add(this.gpBox);
             this.Name = "ConsumeAverage";
-            this.Text = "Promedio de Consumo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ConsumeAverage_Load);
+            this.gpBox.ResumeLayout(false);
+            this.gpBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -72,5 +72,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblAverage;
+        private System.Windows.Forms.GroupBox gpBox;
     }
 }

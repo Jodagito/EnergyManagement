@@ -21,11 +21,6 @@ namespace SegundaEntrega
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bienvenido, para continuar por favor registre un usuario");
-        }
-
         private void registerBtn_Click(object sender, EventArgs e)
         {
             bool save = true;
@@ -70,7 +65,6 @@ namespace SegundaEntrega
                     users_stack.registeredUsers = stored_users;
                     MessageBox.Show("Usuario registrado con éxito");
                     clearBtn_Click(sender, e);
-                    this.Close();
                 }
             }
         }

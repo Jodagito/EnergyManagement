@@ -49,5 +49,10 @@ namespace SegundaEntrega
             string id_card = txtIdCard.Text;
             getUserBillValue(id_card);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

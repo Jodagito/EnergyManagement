@@ -28,80 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SavePerStratum));
             this.label1 = new System.Windows.Forms.Label();
             this.txtStratum = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSavedPercentage = new System.Windows.Forms.Label();
             this.btnQuery = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese el estrato";
             // 
             // txtStratum
             // 
-            this.txtStratum.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtStratum.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStratum.Location = new System.Drawing.Point(18, 54);
+            resources.ApplyResources(this.txtStratum, "txtStratum");
+            this.txtStratum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtStratum.Name = "txtStratum";
-            this.txtStratum.Size = new System.Drawing.Size(76, 38);
-            this.txtStratum.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 115);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 31);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Porcentaje ahorrado";
             // 
             // lblSavedPercentage
             // 
-            this.lblSavedPercentage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblSavedPercentage.AutoSize = true;
-            this.lblSavedPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSavedPercentage.Location = new System.Drawing.Point(112, 160);
+            resources.ApplyResources(this.lblSavedPercentage, "lblSavedPercentage");
             this.lblSavedPercentage.Name = "lblSavedPercentage";
-            this.lblSavedPercentage.Size = new System.Drawing.Size(0, 31);
-            this.lblSavedPercentage.TabIndex = 3;
             // 
             // btnQuery
             // 
-            this.btnQuery.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnQuery.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuery.Location = new System.Drawing.Point(118, 54);
+            resources.ApplyResources(this.btnQuery, "btnQuery");
+            this.btnQuery.BackColor = System.Drawing.Color.Tan;
+            this.btnQuery.ForeColor = System.Drawing.Color.Wheat;
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(153, 38);
-            this.btnQuery.TabIndex = 4;
-            this.btnQuery.Text = "Consultar";
-            this.btnQuery.UseVisualStyleBackColor = true;
+            this.btnQuery.UseVisualStyleBackColor = false;
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
+            // 
+            // groupBox1
+            // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.btnQuery);
+            this.groupBox1.Controls.Add(this.lblSavedPercentage);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtStratum);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // SavePerStratum
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 200);
-            this.Controls.Add(this.btnQuery);
-            this.Controls.Add(this.lblSavedPercentage);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtStratum);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.Controls.Add(this.groupBox1);
             this.Name = "SavePerStratum";
-            this.Text = "Ahorro por Estrato";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -112,5 +100,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblSavedPercentage;
         private System.Windows.Forms.Button btnQuery;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

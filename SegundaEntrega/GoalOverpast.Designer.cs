@@ -28,43 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoalOverpast));
             this.label1 = new System.Windows.Forms.Label();
             this.lblOverpastUsers = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 9);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(556, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cantidad de usuarios que excedieron la meta";
             // 
             // lblOverpastUsers
             // 
-            this.lblOverpastUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblOverpastUsers.AutoSize = true;
-            this.lblOverpastUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOverpastUsers.Location = new System.Drawing.Point(273, 82);
+            resources.ApplyResources(this.lblOverpastUsers, "lblOverpastUsers");
             this.lblOverpastUsers.Name = "lblOverpastUsers";
-            this.lblOverpastUsers.Size = new System.Drawing.Size(0, 31);
-            this.lblOverpastUsers.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.BackColor = System.Drawing.Color.Wheat;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblOverpastUsers);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // GoalOverpast
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 148);
-            this.Controls.Add(this.lblOverpastUsers);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.Controls.Add(this.groupBox1);
             this.Name = "GoalOverpast";
-            this.Text = "Superaron la Meta";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GoalOverpast_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -72,5 +73,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblOverpastUsers;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -91,20 +91,38 @@
       <DependentUpon>SavePerStratum.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="BillValue.es-CO.resx">
+      <DependentUpon>BillValue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BillValue.resx">
       <DependentUpon>BillValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsumeAverage.es-CO.resx">
+      <DependentUpon>ConsumeAverage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsumeAverage.resx">
       <DependentUpon>ConsumeAverage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiscountsTotal.es-CO.resx">
+      <DependentUpon>DiscountsTotal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DiscountsTotal.resx">
       <DependentUpon>DiscountsTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.es-CO.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.es-CO.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoalOverpast.es-CO.resx">
+      <DependentUpon>GoalOverpast.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GoalOverpast.resx">
       <DependentUpon>GoalOverpast.cs</DependentUpon>
@@ -118,12 +136,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SavePerStratum.es-CO.resx">
+      <DependentUpon>SavePerStratum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SavePerStratum.resx">
       <DependentUpon>SavePerStratum.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
-    <None Include="ClassDiagram3.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

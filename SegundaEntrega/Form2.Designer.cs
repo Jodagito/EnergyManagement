@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.consumeTxt = new System.Windows.Forms.TextBox();
             this.goalTxt = new System.Windows.Forms.TextBox();
             this.stratumTxt = new System.Windows.Forms.TextBox();
@@ -39,151 +40,107 @@
             this.clearBtn = new System.Windows.Forms.Button();
             this.registerBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.gpBox = new System.Windows.Forms.GroupBox();
+            this.gpBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // consumeTxt
             // 
-            this.consumeTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.consumeTxt, "consumeTxt");
             this.consumeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.consumeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consumeTxt.Location = new System.Drawing.Point(297, 283);
             this.consumeTxt.Name = "consumeTxt";
-            this.consumeTxt.Size = new System.Drawing.Size(142, 23);
-            this.consumeTxt.TabIndex = 22;
             // 
             // goalTxt
             // 
-            this.goalTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.goalTxt, "goalTxt");
             this.goalTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.goalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goalTxt.Location = new System.Drawing.Point(297, 230);
             this.goalTxt.Name = "goalTxt";
-            this.goalTxt.Size = new System.Drawing.Size(142, 23);
-            this.goalTxt.TabIndex = 21;
             // 
             // stratumTxt
             // 
-            this.stratumTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.stratumTxt, "stratumTxt");
             this.stratumTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.stratumTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stratumTxt.Location = new System.Drawing.Point(297, 176);
             this.stratumTxt.Name = "stratumTxt";
-            this.stratumTxt.Size = new System.Drawing.Size(142, 23);
-            this.stratumTxt.TabIndex = 20;
             // 
             // consumeLbl
             // 
-            this.consumeLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.consumeLbl.AutoSize = true;
-            this.consumeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consumeLbl.Location = new System.Drawing.Point(22, 272);
+            resources.ApplyResources(this.consumeLbl, "consumeLbl");
             this.consumeLbl.Name = "consumeLbl";
-            this.consumeLbl.Size = new System.Drawing.Size(210, 31);
-            this.consumeLbl.TabIndex = 19;
-            this.consumeLbl.Text = "Consumo actual";
             // 
             // goalLbl
             // 
-            this.goalLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.goalLbl.AutoSize = true;
-            this.goalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goalLbl.Location = new System.Drawing.Point(22, 219);
+            resources.ApplyResources(this.goalLbl, "goalLbl");
             this.goalLbl.Name = "goalLbl";
-            this.goalLbl.Size = new System.Drawing.Size(228, 31);
-            this.goalLbl.TabIndex = 18;
-            this.goalLbl.Text = "Meta de consumo";
             // 
             // stratumLabel
             // 
-            this.stratumLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.stratumLabel.AutoSize = true;
-            this.stratumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stratumLabel.Location = new System.Drawing.Point(22, 165);
+            resources.ApplyResources(this.stratumLabel, "stratumLabel");
             this.stratumLabel.Name = "stratumLabel";
-            this.stratumLabel.Size = new System.Drawing.Size(101, 31);
-            this.stratumLabel.TabIndex = 17;
-            this.stratumLabel.Text = "Estrato";
             // 
             // idCardLbl
             // 
-            this.idCardLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.idCardLbl.AutoSize = true;
-            this.idCardLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idCardLbl.Location = new System.Drawing.Point(22, 115);
+            resources.ApplyResources(this.idCardLbl, "idCardLbl");
             this.idCardLbl.Name = "idCardLbl";
-            this.idCardLbl.Size = new System.Drawing.Size(100, 31);
-            this.idCardLbl.TabIndex = 16;
-            this.idCardLbl.Text = "Cédula";
             // 
             // idCardTxt
             // 
-            this.idCardTxt.AccessibleDescription = "Cédula del usuario";
-            this.idCardTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.idCardTxt, "idCardTxt");
             this.idCardTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idCardTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idCardTxt.Location = new System.Drawing.Point(297, 126);
             this.idCardTxt.Name = "idCardTxt";
-            this.idCardTxt.Size = new System.Drawing.Size(142, 23);
-            this.idCardTxt.TabIndex = 15;
             this.idCardTxt.Tag = "";
             // 
             // clearBtn
             // 
-            this.clearBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearBtn.Location = new System.Drawing.Point(297, 359);
+            resources.ApplyResources(this.clearBtn, "clearBtn");
+            this.clearBtn.BackColor = System.Drawing.Color.Tan;
+            this.clearBtn.ForeColor = System.Drawing.Color.Wheat;
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(142, 47);
-            this.clearBtn.TabIndex = 14;
-            this.clearBtn.Text = "Limpiar";
-            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.UseVisualStyleBackColor = false;
             this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // registerBtn
             // 
-            this.registerBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerBtn.Location = new System.Drawing.Point(25, 359);
+            resources.ApplyResources(this.registerBtn, "registerBtn");
+            this.registerBtn.BackColor = System.Drawing.Color.Tan;
+            this.registerBtn.ForeColor = System.Drawing.Color.Wheat;
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(142, 47);
-            this.registerBtn.TabIndex = 13;
-            this.registerBtn.Text = "Registrar";
-            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 24);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 91);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Registro";
+            // 
+            // gpBox
+            // 
+            resources.ApplyResources(this.gpBox, "gpBox");
+            this.gpBox.Controls.Add(this.consumeTxt);
+            this.gpBox.Controls.Add(this.goalTxt);
+            this.gpBox.Controls.Add(this.stratumTxt);
+            this.gpBox.Controls.Add(this.consumeLbl);
+            this.gpBox.Controls.Add(this.goalLbl);
+            this.gpBox.Controls.Add(this.stratumLabel);
+            this.gpBox.Controls.Add(this.idCardLbl);
+            this.gpBox.Controls.Add(this.idCardTxt);
+            this.gpBox.Controls.Add(this.clearBtn);
+            this.gpBox.Controls.Add(this.registerBtn);
+            this.gpBox.Controls.Add(this.label1);
+            this.gpBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gpBox.Name = "gpBox";
+            this.gpBox.TabStop = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 448);
-            this.Controls.Add(this.consumeTxt);
-            this.Controls.Add(this.goalTxt);
-            this.Controls.Add(this.stratumTxt);
-            this.Controls.Add(this.consumeLbl);
-            this.Controls.Add(this.goalLbl);
-            this.Controls.Add(this.stratumLabel);
-            this.Controls.Add(this.idCardLbl);
-            this.Controls.Add(this.idCardTxt);
-            this.Controls.Add(this.clearBtn);
-            this.Controls.Add(this.registerBtn);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.Controls.Add(this.gpBox);
             this.Name = "Form2";
-            this.Text = "Registro";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.gpBox.ResumeLayout(false);
+            this.gpBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -200,5 +157,6 @@
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gpBox;
     }
 }
