@@ -16,10 +16,7 @@ namespace SegundaEntrega
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            List<User> stored_users = new List<User>();
-            Users users_stack = new Users();
-            Application.Run(new Form1(stored_users, users_stack));
-            Application.Run(new Form2(users_stack));
+            Application.Run(new Form1());
         }
     }
 }
