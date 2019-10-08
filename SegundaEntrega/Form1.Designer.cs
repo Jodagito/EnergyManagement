@@ -28,149 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.registerBtn = new System.Windows.Forms.Button();
-            this.clearBtn = new System.Windows.Forms.Button();
-            this.idCardTxt = new System.Windows.Forms.TextBox();
-            this.idCardLbl = new System.Windows.Forms.Label();
-            this.stratumLabel = new System.Windows.Forms.Label();
-            this.goalLbl = new System.Windows.Forms.Label();
-            this.consumeLbl = new System.Windows.Forms.Label();
-            this.stratumTxt = new System.Windows.Forms.TextBox();
-            this.goalTxt = new System.Windows.Forms.TextBox();
-            this.consumeTxt = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.valorFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promedioConsumoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalDescuentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ahorroPorEstratoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.superaronLaMetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, -1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 91);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenido";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarToolStripMenuItem,
+            this.informaciónToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(440, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // registerBtn
+            // registrarToolStripMenuItem
             // 
-            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerBtn.Location = new System.Drawing.Point(17, 334);
-            this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(142, 47);
-            this.registerBtn.TabIndex = 1;
-            this.registerBtn.Text = "Registrar";
-            this.registerBtn.UseVisualStyleBackColor = true;
-            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
+            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.registrarToolStripMenuItem.Text = "Registrar";
+            this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click);
             // 
-            // clearBtn
+            // informaciónToolStripMenuItem
             // 
-            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearBtn.Location = new System.Drawing.Point(289, 334);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(142, 47);
-            this.clearBtn.TabIndex = 2;
-            this.clearBtn.Text = "Limpiar";
-            this.clearBtn.UseVisualStyleBackColor = true;
-            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            this.informaciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.valorFacturaToolStripMenuItem,
+            this.promedioConsumoToolStripMenuItem,
+            this.totalDescuentosToolStripMenuItem,
+            this.ahorroPorEstratoToolStripMenuItem,
+            this.superaronLaMetaToolStripMenuItem});
+            this.informaciónToolStripMenuItem.Name = "informaciónToolStripMenuItem";
+            this.informaciónToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.informaciónToolStripMenuItem.Text = "Información";
             // 
-            // idCardTxt
+            // valorFacturaToolStripMenuItem
             // 
-            this.idCardTxt.AccessibleDescription = "Cédula del usuario";
-            this.idCardTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idCardTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idCardTxt.Location = new System.Drawing.Point(289, 101);
-            this.idCardTxt.Name = "idCardTxt";
-            this.idCardTxt.Size = new System.Drawing.Size(142, 23);
-            this.idCardTxt.TabIndex = 3;
-            this.idCardTxt.Tag = "";
+            this.valorFacturaToolStripMenuItem.Name = "valorFacturaToolStripMenuItem";
+            this.valorFacturaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.valorFacturaToolStripMenuItem.Text = "Valor Factura";
+            this.valorFacturaToolStripMenuItem.Click += new System.EventHandler(this.valorFacturaToolStripMenuItem_Click);
             // 
-            // idCardLbl
+            // promedioConsumoToolStripMenuItem
             // 
-            this.idCardLbl.AutoSize = true;
-            this.idCardLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idCardLbl.Location = new System.Drawing.Point(14, 90);
-            this.idCardLbl.Name = "idCardLbl";
-            this.idCardLbl.Size = new System.Drawing.Size(100, 31);
-            this.idCardLbl.TabIndex = 4;
-            this.idCardLbl.Text = "Cédula";
+            this.promedioConsumoToolStripMenuItem.Name = "promedioConsumoToolStripMenuItem";
+            this.promedioConsumoToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.promedioConsumoToolStripMenuItem.Text = "Promedio Consumo";
+            this.promedioConsumoToolStripMenuItem.Click += new System.EventHandler(this.promedioConsumoToolStripMenuItem_Click);
             // 
-            // stratumLabel
+            // totalDescuentosToolStripMenuItem
             // 
-            this.stratumLabel.AutoSize = true;
-            this.stratumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stratumLabel.Location = new System.Drawing.Point(14, 140);
-            this.stratumLabel.Name = "stratumLabel";
-            this.stratumLabel.Size = new System.Drawing.Size(101, 31);
-            this.stratumLabel.TabIndex = 5;
-            this.stratumLabel.Text = "Estrato";
+            this.totalDescuentosToolStripMenuItem.Name = "totalDescuentosToolStripMenuItem";
+            this.totalDescuentosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.totalDescuentosToolStripMenuItem.Text = "Total Descuentos";
+            this.totalDescuentosToolStripMenuItem.Click += new System.EventHandler(this.totalDescuentosToolStripMenuItem_Click);
             // 
-            // goalLbl
+            // ahorroPorEstratoToolStripMenuItem
             // 
-            this.goalLbl.AutoSize = true;
-            this.goalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goalLbl.Location = new System.Drawing.Point(14, 194);
-            this.goalLbl.Name = "goalLbl";
-            this.goalLbl.Size = new System.Drawing.Size(228, 31);
-            this.goalLbl.TabIndex = 6;
-            this.goalLbl.Text = "Meta de consumo";
+            this.ahorroPorEstratoToolStripMenuItem.Name = "ahorroPorEstratoToolStripMenuItem";
+            this.ahorroPorEstratoToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.ahorroPorEstratoToolStripMenuItem.Text = "Ahorro por Estrato";
+            this.ahorroPorEstratoToolStripMenuItem.Click += new System.EventHandler(this.ahorroPorEstratoToolStripMenuItem_Click);
             // 
-            // consumeLbl
+            // superaronLaMetaToolStripMenuItem
             // 
-            this.consumeLbl.AutoSize = true;
-            this.consumeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consumeLbl.Location = new System.Drawing.Point(14, 247);
-            this.consumeLbl.Name = "consumeLbl";
-            this.consumeLbl.Size = new System.Drawing.Size(210, 31);
-            this.consumeLbl.TabIndex = 7;
-            this.consumeLbl.Text = "Consumo actual";
-            // 
-            // stratumTxt
-            // 
-            this.stratumTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.stratumTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stratumTxt.Location = new System.Drawing.Point(289, 151);
-            this.stratumTxt.Name = "stratumTxt";
-            this.stratumTxt.Size = new System.Drawing.Size(142, 23);
-            this.stratumTxt.TabIndex = 9;
-            // 
-            // goalTxt
-            // 
-            this.goalTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.goalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goalTxt.Location = new System.Drawing.Point(289, 205);
-            this.goalTxt.Name = "goalTxt";
-            this.goalTxt.Size = new System.Drawing.Size(142, 23);
-            this.goalTxt.TabIndex = 10;
-            // 
-            // consumeTxt
-            // 
-            this.consumeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.consumeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consumeTxt.Location = new System.Drawing.Point(289, 258);
-            this.consumeTxt.Name = "consumeTxt";
-            this.consumeTxt.Size = new System.Drawing.Size(142, 23);
-            this.consumeTxt.TabIndex = 11;
+            this.superaronLaMetaToolStripMenuItem.Name = "superaronLaMetaToolStripMenuItem";
+            this.superaronLaMetaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.superaronLaMetaToolStripMenuItem.Text = "Superaron la Meta";
+            this.superaronLaMetaToolStripMenuItem.Click += new System.EventHandler(this.superaronLaMetaToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 425);
-            this.Controls.Add(this.consumeTxt);
-            this.Controls.Add(this.goalTxt);
-            this.Controls.Add(this.stratumTxt);
-            this.Controls.Add(this.consumeLbl);
-            this.Controls.Add(this.goalLbl);
-            this.Controls.Add(this.stratumLabel);
-            this.Controls.Add(this.idCardLbl);
-            this.Controls.Add(this.idCardTxt);
-            this.Controls.Add(this.clearBtn);
-            this.Controls.Add(this.registerBtn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Calculadora Consumo de Energía";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,17 +124,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button registerBtn;
-        private System.Windows.Forms.Button clearBtn;
-        private System.Windows.Forms.TextBox idCardTxt;
-        private System.Windows.Forms.Label idCardLbl;
-        private System.Windows.Forms.Label stratumLabel;
-        private System.Windows.Forms.Label goalLbl;
-        private System.Windows.Forms.Label consumeLbl;
-        private System.Windows.Forms.TextBox stratumTxt;
-        private System.Windows.Forms.TextBox goalTxt;
-        private System.Windows.Forms.TextBox consumeTxt;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem informaciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem valorFacturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem promedioConsumoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem totalDescuentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ahorroPorEstratoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem superaronLaMetaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
     }
 }
 
